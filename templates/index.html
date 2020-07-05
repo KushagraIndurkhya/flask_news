@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flask Template Example</title>
+</head>
+
+<body>
+    <div>
+        <p>{{ date }}</p>
+        <ol>
+            {% for item in news %}
+            <li>{{ item }}</li>
+            {% endfor %}
+        </ol>
+    </div>
+</body>
+
+</html>
