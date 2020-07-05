@@ -7,7 +7,7 @@ today = date.today()
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/news')
 def hello_world():
     news_url = "https://news.google.com/news/rss"
     Client = urlopen(news_url)
