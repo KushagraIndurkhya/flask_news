@@ -16,14 +16,10 @@ def hello_world():
     soup_page = soup(xml_page, "lxml")
     news_list = soup_page.findAll("item")
     final_news=[]
-    x = 0
     for news in news_list:
-        if (x < 120):
             final_news.append(news.title.text)
-            x = x + 1
-    print(len(news_list))
     return render_template("index.html",date=today,news= final_news)
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
