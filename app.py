@@ -7,18 +7,18 @@ today = date.today()
 app = Flask(__name__)
 
 
-@app.route('/news')
+@app.route('/')
 def hello_world():
-    news_url = "https://news.google.com/news/rss"
-    Client = urlopen(news_url)
-    xml_page = Client.read()
-    Client.close()
-    soup_page = soup(xml_page, "lxml")
-    news_list = soup_page.findAll("item")
-    final_news=[]
-    for news in news_list:
-            final_news.append(news.title.text)
-    return render_template("index.html",date=today,news= final_news)
+    # news_url = "https://news.google.com/news/rss"
+    # Client = urlopen(news_url)
+    # xml_page = Client.read()
+    # Client.close()
+    # soup_page = soup(xml_page, "lxml")
+    # news_list = soup_page.findAll("item")
+    # final_news=[]
+    # for news in news_list:
+    #         final_news.append(news.title.text)
+    return render_template("index.html",date=today,news=['1','2','a','b'])
 
 
 if __name__ == '__main__':
