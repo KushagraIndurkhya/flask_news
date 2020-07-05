@@ -6,9 +6,8 @@ from datetime import date
 today = date.today()
 app = Flask(__name__)
 
-
 @app.route('/')
-def hello_world():
+def news_scrape():
     news_url = "https://news.google.com/news/rss"
     Client = urlopen(news_url)
     xml_page = Client.read()
