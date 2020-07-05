@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def news_scrape():
-    news_url = "https://news.google.com/news/rss"
+    news_url = "https://news.google.com/rss?hl=en-IN&gl=IN&ceid=IN:en"
     Client = urlopen(news_url)
     xml_page = Client.read()
     Client.close()
