@@ -1,4 +1,4 @@
-# flask_news
+
 <a href="https://www.python.org/"><img src="http://ForTheBadge.com/images/badges/made-with-python.svg"></a>
 <h1>News Headlines flask app</h1>
 <img src="https://img.shields.io/badge/Python-flask-blue">
