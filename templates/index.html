@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>News Headline</title>
 </head>
@@ -9,8 +8,8 @@
     <div>
         <p>{{ date }}</p>
         <ol>
-            {% for item in news %}
-            <li>{{ item }}</li>
+            {% for i in range(38) %}
+                <li><a href={{ links[i] }}>{{ news[i] }}</a></li>
             {% endfor %}
         </ol>
     </div>
