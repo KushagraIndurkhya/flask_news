@@ -9,4 +9,4 @@ lxml==4.6.3
 MarkupSafe==1.1.1
 soupsieve==2.0.1
 urlopen==1.0.0
-Werkzeug==1.0.1
+Werkzeug==2.2.3
